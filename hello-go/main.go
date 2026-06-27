@@ -11,7 +11,7 @@ const (
 	frenchHelloPrefix  = "Bonjour, "
 )
 
-func getPrefix(language string) (prefix string) {
+func getPrefix(language string) (prefix string) { //function with named return value
 	switch language {
 	case spanish:
 		prefix = spanishHelloPrefix

@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func assertCorrectMessage(t testing.TB, got string, want string) {
-	t.Helper()
+	t.Helper() //if this helper reports a failure, Go points to the calling test instead of this function
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
